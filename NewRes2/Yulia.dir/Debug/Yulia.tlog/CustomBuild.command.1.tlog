@@ -1,0 +1,10 @@
+^C:\USERS\НАСТЯ\DOCUMENTS\GITHUB\LABAA\CLONECMAKE2\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Настя/Documents/GitHub/Labaa/CloneCMake2 -BC:/Users/Настя/Documents/GitHub/Labaa/NewRes2 --check-stamp-file C:/Users/Настя/Documents/GitHub/Labaa/NewRes2/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

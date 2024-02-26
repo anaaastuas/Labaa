@@ -1,0 +1,10 @@
+^C:\USERS\НАСТЯ\DOCUMENTS\GITHUB\LABAA\NEWRES2\CMAKEFILES\150216665C66CAE4955B4871482FCFB6\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Настя/Documents/GitHub/Labaa/CloneCMake2 -BC:/Users/Настя/Documents/GitHub/Labaa/NewRes2 --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/Настя/Documents/GitHub/Labaa/NewRes2/Yulia.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
